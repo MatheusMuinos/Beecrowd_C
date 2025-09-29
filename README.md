@@ -5,7 +5,9 @@
 Para compilar e executar um programa em C deste repositório, utilize os comandos abaixo no terminal:
 
 1. Entre no diretorio do programa:
+    ```bash
     cd iniciante
+    ```
 
 2. Compile o arquivo desejado (exemplo para o arquivo `iniciante/1051.c`):
 	```bash
