@@ -13,7 +13,7 @@ Para compilar e executar um programa em C deste repositório, utilize os comando
 
 2. Compile o arquivo desejado (exemplo para o arquivo `iniciante/1051.c`):
 	```bash
-	gcc 1051.c -o iniciante/1051
+	gcc 1051.c -o 1051
 	```
 
 3. Execute o programa compilado:
