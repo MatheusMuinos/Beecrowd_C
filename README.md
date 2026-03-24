@@ -22,9 +22,44 @@ Para compilar e executar um programa em C deste repositório, utilize os comando
 	```
 
 Se o programa precisar de entrada, digite o valor após rodar o comando de execução.
-## Sobre este repositório
 
-Este repositório contém todos os códigos das minhas soluções para problemas do Beecrowd.
+## Como criar e usar o banco para os exercicios SQL
+
+Os exercicios SQL ficam na pasta `SQL` e podem ser testados localmente com SQLite.
+
+### Arquivos adicionados para teste local
+
+- `SQL/00_schema.sql`: cria as tabelas.
+- `SQL/01_seed.sql`: povoa as tabelas com dados de exemplo.
+
+### Passo a passo
+
+1. Entre na pasta de SQL:
+	```bash
+	cd SQL
+	```
+
+2. Crie e povoe o banco em um comando:
+	```bash
+	sqlite3 beecrowd.db ".read 00_schema.sql"; sqlite3 beecrowd.db ".read 01_seed.sql"
+	```
+
+3. Rode as consultas:
+	```bash
+	sqlite3 beecrowd.db ".read 2602.sql"
+	sqlite3 beecrowd.db ".read 2603.sql"
+	sqlite3 beecrowd.db ".read 2604.sql"
+	
+	... ou qualquer outro ...
+	```
+
+4. Se quiser conferir os dados direto no terminal:
+	```bash
+	sqlite3 beecrowd.db "SELECT * FROM customers;"
+	sqlite3 beecrowd.db "SELECT * FROM products;"
+	```
+
+## Sobre este repositório
 
 Progresso e estatísticas diretamente no meu perfil do Beecrowd:
 
