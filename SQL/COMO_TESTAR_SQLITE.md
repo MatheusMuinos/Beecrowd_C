@@ -12,9 +12,8 @@
 ## 3) Comandos no terminal (dentro da pasta SQL)
 ```bash
 sqlite3 beecrowd.db ".read 00_schema.sql"; sqlite3 beecrowd.db ".read 01_seed.sql"  -> CRIAR E POVOAR TABELAS
-sqlite3 beecrowd.db ".read 2602.sql"
-sqlite3 beecrowd.db ".read 2603.sql"
-sqlite3 beecrowd.db ".read 2604.sql"
+
+sqlite3 beecrowd.db ".read XXXX.sql" -> TESTAR QUALQUER SCRIPT
 ...
 
 ```
